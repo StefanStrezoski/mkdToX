@@ -1,25 +1,33 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 html {
   font-size: 60.5%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
 }
-
+@media (max-width: 600px) {
+  html {
+    flex-direction: column;
+  }
+}
 .intro {
   font-size: 2rem;
   text-align: center;
   position: absolute;
   width: 70%;
-  top: 42%;
+  top: 32%;
   left: 50%;
   align-self: center;
   transform: translate(-50%, -50%);
+  display: inherit;
 }
 
 .input-value {
   width: 30%;
+  align-self: center;
 }
 
 .drop-down {
@@ -35,6 +43,7 @@ html {
 
 .result {
   font-size: 3rem;
+  align-self: center;
 }
 
 .output {
@@ -42,7 +51,7 @@ html {
   text-align: center;
   position: absolute;
   width: 30%;
-  top: 62%;
+  top: 72%;
   left: 50%;
   align-self: center;
   transform: translate(-50%, -50%);
@@ -50,4 +59,5 @@ html {
 
 .btn-convert {
   font-size: 2rem;
+  align-self: center;
 }
